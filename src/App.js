@@ -4,22 +4,27 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Name />
+      <Surname />
+      <Age />
     </div>
   );
 }
 
+function Name () {
+  const name = "Ararat";
+  return <p> Name : {name} </p>
+}
+function Surname () {
+  const Surname = "Yesayan"
+  return <p> Surname : {Surname}</p>
+}
+function Age () {
+  const Age = 22;
+  return (
+  <p> Age : {Age + 3} </p>  
+  )
+}
+
 export default App;
+
